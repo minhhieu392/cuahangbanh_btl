@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+
+    android:weightSum="10">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toobargiohang"
+        app:title="GIỎ HÀNG"
+        android:background="#F1F0F3">
+
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:textColor="#535355"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textviewthongbao"
+                android:gravity="center"
+                android:textSize="30sp"
+                android:text="GIỎ HÀNG TRỐNG"/>
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/listviewgiohang"/>
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="2"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:textColor="#f20"
+                    android:text="TỔNG TIỀN"/>
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="right|center"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/textviewtongtien"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:textColor="#f20"
+                    android:text="GIÁ TRỊ"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <Button
+        android:layout_margin="5dp"
+        android:background="@drawable/botron_button"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/buttonthnahtoan"
+        android:text="THANH TOÁN"
+        android:layout_weight="1"
+        android:textColor="#FDF0EE"
+        android:textSize="20sp" />
+    <Button
+        android:layout_margin="5dp"
+        android:background="@drawable/botron_button"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/buttontieptuc"
+        android:text="TIẾP TỤC MUA"
+        android:textColor="#FDF0EE"
+        android:layout_weight="1"
+        android:textSize="20sp" />
+
+</LinearLayout>
